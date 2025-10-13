@@ -18,8 +18,15 @@ def setup_driver():
 def fill_text_inputs(driver):
     driver.get("https://demoqa.com/text-box")
     wait = WebDriverWait(driver, 10)
-    full_name = wait.until(EC.presence_of_element_located((By.ID, "userName")))
-    full_name.send_keys("Rahman Zillur")
+    # full_name = wait.until(EC.presence_of_element_located((By.ID, "userName")))
+    # full_name.send_keys("Rahman Zillur")
+    #
+    # email_add = wait.until(EC.presence_of_element_located((By.ID, "userEmail")))
+    # email_add.send_keys("zil10@gmail.com")
+    #
+    # current_add= wait.until(EC.presence_of_element_located((By.ID, "currentAddresss")))
+    # current_add.send_keys("123 USA")
+ 
     # আরও ফিল্ড পূরণ করুণ...
     # শেষ হলে:
     # driver.quit()
